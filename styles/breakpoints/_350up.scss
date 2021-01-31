@@ -1,0 +1,45 @@
+/******************************************************************
+
+Stylesheet: iPhone6以降に対応
+
+******************************************************************/
+
+// メインビジュアル
+.main-visual {
+  overflow: hidden;
+  .balloon3-right-btn {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 500;
+    top: 15px;
+    right: -12px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 70px;
+    height: 70px;
+    margin: 1.5em 15px 1.5em 0;
+    padding: 20px 5px;
+    transform: rotate(15deg);
+    text-align: center;
+    color: #fff;
+    border-radius: 50%;
+    background: #c4c4c4;
+    line-height: 1.5;
+  }
+
+  .balloon3-right-btn:before {
+    display: block;
+    position: absolute;
+    z-index: -100;
+    z-index: 0;
+    bottom: -13px;
+    left: 20px;
+    margin-top: -15px;
+    content: "";
+    transform: rotate(15deg);
+    border: 15px solid transparent;
+    border-left: 15px solid #c4c4c4;
+  }
+}

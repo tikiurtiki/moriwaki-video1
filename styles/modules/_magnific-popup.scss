@@ -1,0 +1,56 @@
+.magnific-popup {
+  overflow: hidden;
+  &__iframe {
+    position: relative;
+    display: block;
+    transition: opacity 0.3s;
+    border-radius: 7px;
+    & > img {
+      width: 100%;
+      height: auto;
+    }
+    &:hover {
+      opacity: 0.6;
+    }
+    &::before {
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      right: 0;
+      left: 0;
+      display: block;
+      width: 64px;
+      height: 64px;
+      margin: -32px auto 0;
+      content: "";
+      background: url(../images/movie-logo.svg) center center / 64px 64px
+        no-repeat;
+    }
+  }
+}
+
+// 以下アニメーション
+.mfp-bg {
+  transition: all 0.2s ease-out;
+  .mfp-ready {
+    opacity: 0.8;
+  }
+  .mfp-removing {
+    opacity: 0;
+  }
+}
+
+.mfp-wrap .mfp-content {
+  opacity: 0;
+  transition: all 0.2s ease-out;
+}
+
+.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+

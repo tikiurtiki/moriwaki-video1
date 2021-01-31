@@ -1,0 +1,360 @@
+/******************************************************************
+
+Stylesheet: 600px以上のタブレットやモニタで適用
+
+******************************************************************/
+
+body {
+  font-size: 1.05rem;
+}
+
+.title {
+  font-size: 1.4rem;
+}
+
+.dot-line {
+  width: 60%;
+  padding-bottom: 30px;
+}
+
+.header {
+  height: $pcHeaderHeight;
+  &__logo {
+    width: 280px;
+    height: 22px;
+  }
+}
+
+// グローバルメニュー
+.global-nav {
+  &__container {
+    position: absolute;
+    top: 65%;
+  }
+
+  &__list {
+    margin-bottom: 35px;
+    text-align: center;
+  }
+}
+
+// ハンバーガーメニュー
+.humberger-menu {
+  transition: opacity 0.5s;
+  &:hover {
+    opacity: 0.6;
+  }
+  &__btn {
+    & > span {
+      width: 43px;
+      margin-bottom: 8px;
+    }
+  }
+}
+
+// ハンバーガーメニューがクリックされたとき
+.menu-open {
+  & .humberger-menu {
+    &__btn {
+      & > span {
+        &:nth-child(1) {
+          transform: translateY(10px) rotate(135deg);
+        }
+        &:nth-child(3) {
+          transform: translateY(-10px) rotate(-135deg);
+        }
+      }
+    }
+  }
+}
+
+.main-visual {
+  &__visual {
+    height: 500px;
+  }
+  &__catch-copy {
+    margin-bottom: 30px;
+    &--main {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+    }
+  }
+  .balloon3-right-btn {
+    top: -20px;
+    right: 80px;
+    width: 130px;
+    height: 130px;
+    font-size: 1.2rem;
+    padding: 35px 5px;
+  }
+  .balloon3-right-btn:before {
+    bottom: -10px;
+    left: 30px;
+    margin-top: -15px;
+    border: 20px solid transparent;
+    border-left: 20px solid #c4c4c4;
+  }
+}
+
+.gold-medal {
+  padding: 20px 0;
+  &__inner {
+    max-width: 450px;
+  }
+  &__text {
+    font-size: 1.1rem;
+    &--inner {
+      font-size: 14px;
+      display: block;
+    }
+  }
+}
+
+// PV
+.promotion-video {
+  &__inner {
+    padding: 50px 0;
+  }
+  &__title {
+    & > span {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.about {
+  background-position: 130% 50%;
+  background-size: 60%;
+}
+
+.promotion-video {
+  &__inner {
+    width: 70%;
+    max-width: $contentMaxWidth;
+  }
+}
+
+.shooting-scene {
+  padding-top: 50px;
+  background-color: $bgColor;
+  &__inner {
+    padding: 30px 0;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+.customer {
+  padding-top: 70px;
+  &__inner {
+    width: 65%;
+  }
+  .card {
+    &__textarea {
+      &--child {
+        padding: 30px 0;
+      }
+    }
+  }
+}
+// お客様の声のスワイパーの設定
+.video-swiper-container,
+.customer-swiper-container {
+  .swiper-button-prev,
+  .swiper-button-next {
+    &::after {
+      font-size: 50px;
+    }
+  }
+}
+
+// 料金とキャンペーン情報
+.money {
+  padding-top: 100px;
+  &__inner {
+    width: 50%;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__plan {
+    margin-bottom: 50px;
+    background-position: 370px 60px;
+    background-size: 25%;
+  }
+  .plan {
+    &__inner {
+      padding: 30px 0;
+    }
+    &__title {
+      padding: 0 0px;
+      font-size: 1.1rem;
+      &::before,
+      &::after {
+        width: 60px;
+      }
+      &::before {
+        left: 50px;
+      }
+      &::after {
+        right: 50px;
+      }
+    }
+    &__money {
+      //   &--small {
+      //     position: relative;
+      //     display: block;
+      //     margin-top: 20px;
+      //     font-size: 1.3rem;
+
+      //     &::before {
+      //       position: absolute;
+      //       top: 25px;
+      //       left: 50%;
+      //       width: 90px;
+      //       transform: rotate(10deg) translateX(-50%);
+      //     }
+      //   }
+      //   &--off {
+      //     font-size: 1.1rem;
+      //     margin: 20px 0 20px 0;
+      //   }
+      &--large {
+        font-size: 1.8rem;
+      }
+    }
+    &__text {
+      width: 70%;
+      margin-top: 50px;
+      padding-top: 20px;
+    }
+  }
+  &__text {
+    font-size: 12px;
+  }
+  &__precautionary {
+    & > p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.feature {
+  padding-top: 100px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__inner {
+    width: 80%;
+  }
+  &__card {
+    margin-right: 20px;
+  }
+}
+
+.flow {
+  padding-top: 100px;
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__img-wrapper {
+    max-height: 150px;
+    & > img {
+      max-height: 150px;
+    }
+  }
+}
+
+// 在関インタビュアー
+.interviewer {
+  &__inner {
+  }
+  &__title {
+    margin-bottom: 50px;
+  }
+  &__intro {
+    padding: 50px 30px;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-bottom: 50px;
+  }
+  &__intro-img {
+		width: 40%;
+    margin-bottom: 0;
+		
+  }
+  &__intro-name {
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
+  &__intro-text {
+    width: 55%;
+  }
+  &__review-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  &__review-lists {
+    & li {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+  }
+  &__review-header {
+		width: 25%;
+		margin-bottom: 0;
+  }
+  &__review-icon {
+	text-align: center;
+	margin-bottom: 5px;
+  }
+  &__review-text {
+		width: 70%;
+  }
+}
+
+// 質問
+.faq {
+  padding: 100px 0;
+  &__title {
+    padding-bottom: 50px;
+  }
+}
+.accordion {
+  margin-bottom: 30px;
+}
+
+// moriwakiVideoの思い
+.message {
+  padding: 50px 0;
+  &__video-title {
+    margin-bottom: 30px;
+  }
+  &__video-wrapper {
+    margin-bottom: 50px;
+  }
+}
+
+.reservertion {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.contact {
+  padding-bottom: 100px;
+}
+
+// 予約ボタン（下に固定）
+.reserve-bottom-btn {
+  height: 110px;
+  &__btn {
+    font-size: 1.5rem;
+  }
+  &__balloon {
+    left: 150px;
+    font-size: 1.1rem;
+  }
+}

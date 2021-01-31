@@ -1,0 +1,57 @@
+.video-swiper-container, .customer-swiper-container {
+  width: 100%;
+  padding: 0 10% 50px 10%;
+  position: relative;
+
+  .swiper-pagination-bullet-active {
+    background: $GlobalTextColor;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $GlobalTextColor;
+    outline: none;
+    &::after {
+      font-family: "Font Awesome 5 Free", sans-serif;
+      content: "\f0d9";
+      font-weight: bold;
+      font-size: 30px;
+      color: $GlobalTextColor;
+    }
+  }
+  .swiper-button-prev {
+    left: 0px;
+  }
+  .swiper-button-next {
+    right: 0;
+    &::after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: $GlobalTextColor;
+}
+
+.scene-swiper-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+
+  .swiper-pagination-bullet-active {
+    background: $GlobalTextColor;
+  }
+}
+
+.customer-swiper-container{
+  .swiper-button-prev {
+    left: -7px;
+  }
+  .swiper-button-next {
+    right: -7px;
+  }
+}

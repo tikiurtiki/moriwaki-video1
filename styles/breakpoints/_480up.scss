@@ -1,0 +1,292 @@
+/******************************************************************
+
+Stylesheet: 480px以上(スマホの横向き)のモニタで適用
+
+******************************************************************/
+
+body {
+  font-size: 1rem;
+}
+
+p,
+dt,
+dd {
+  line-height: 1.8;
+}
+
+// reservertion, contactのフォント
+.text-cursive {
+  font-size: 24px;
+}
+
+.title {
+  font-size: 1.2rem;
+}
+
+// ヘッダー
+.header {
+  // お問い合わせページのボタン
+  &__btn {
+    font-size: 14px;
+  }
+}
+
+.main-visual {
+  &__catch-copy {
+    &--main {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__visual {
+    height: 400px;
+  }
+
+  .balloon3-right-btn {
+    top: -15px;
+    right: 35px;
+    width: 100px;
+    height: 100px;
+    font-size: 1.01rem;
+  }
+}
+
+// PV
+.promotion-video {
+  &__title {
+    margin-bottom: 20px;
+    & > span {
+      font-size: 1.05rem;
+    }
+  }
+}
+
+.about {
+  background-position: 230% 0;
+  background-size: 80%;
+  &__title {
+    text-align: center;
+  }
+  &__text-wrapper {
+    text-align: center;
+  }
+}
+
+.gold-medal {
+  &__inner {
+    max-width: 400px;
+  }
+}
+
+.video-letter {
+  padding-top: 50px;
+  &__text-wrapper {
+    margin-bottom: 30px;
+  }
+}
+
+// ビデオレターのスワイパーの設定
+.video-swiper-container {
+  .swiper-button-prev,
+  .swiper-button-next {
+    &::after {
+      font-size: 40px;
+    }
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+// お客様の声のスワイパーの設定
+.customer-swiper-container {
+  .swiper-button-prev,
+  .swiper-button-next {
+    &::after {
+      font-size: 40px;
+    }
+  }
+}
+
+.customer {
+  &__lead {
+    margin-bottom: 10px;
+  }
+  .card {
+    &__textarea {
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+    &__text {
+      font-size: 16px;
+      &--name {
+        padding: 10px 0;
+      }
+    }
+    &__btn {
+      font-size: 1rem;
+    }
+  }
+}
+
+.comparison {
+  padding-top: 50px;
+  &__lead {
+    margin-bottom: 30px;
+  }
+
+  .cross-table {
+    &__inner {
+      font-size: 16px;
+    }
+  }
+  &__precautionary {
+    font-size: 12px;
+    width: 40%;
+  }
+}
+
+// 料金とキャンペーン情報
+.money {
+  &__inner{
+	width: 60%;
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__plan {
+    margin-bottom: 30px;
+    background-position: 290px 60px;
+    background-size: 30%;
+  }
+  .plan {
+    &__inner {
+      padding: 30px 0;
+    }
+    &__title {
+      padding: 0 40px;
+	  font-size: 1.1rem;
+	  margin-bottom: 50px;
+      &::before,
+      &::after {
+        width: 40px;
+      }
+      &::before {
+        left: 40px;
+      }
+      &::after {
+        right: 45px;
+      }
+    }
+    &__money {
+		margin-bottom: 50px;
+      //   &--small {
+      //     position: relative;
+      //     display: block;
+      //     margin-top: 20px;
+      //     font-size: 1.3rem;
+
+      //     &::before {
+      //       position: absolute;
+      //       top: 25px;
+      //       left: 50%;
+      //       width: 90px;
+      //       transform: rotate(10deg) translateX(-50%);
+      //     }
+      &--large {
+        font-size: 1.8rem;
+      }
+    }
+	&__text {
+	  width: 70%;
+	  margin-top: 50px;
+	  padding-top: 20px;
+	}
+  }
+  &__text {
+    font-size: 12px;
+  }
+  &__precautionary {
+    & > p {
+      font-size: 0.9rem;
+    }
+  }
+}
+// 特徴
+.feature {
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__card {
+    margin-bottom: 30px;
+  }
+  .card {
+    &__textarea {
+      margin-bottom: 30px;
+    }
+    &__title {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// ご利用の流れ
+.flow {
+  &__content {
+    border-radius: 7px;
+    background-color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+    &--sub {
+      top: -20px;
+      font-size: 28px;
+    }
+  }
+  &__header {
+    font-size: 14px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+  }
+  &__img-wrapper {
+    max-height: 100px;
+    & > img {
+      width: 100%;
+      max-height: 100px;
+      object-fit: contain;
+    }
+  }
+}
+
+// moriwakiVideoの思い
+.message {
+  padding: 50px 0;
+  &__contents {
+    width: 80%;
+  }
+  &__text {
+    margin-bottom: 30px;
+  }
+}
+
+// 予約ボタン（下に固定）
+.reserve-bottom-btn {
+  &__btn {
+    font-size: 1.2rem;
+  }
+  &__balloon {
+    top: -15px;
+    left: 60px;
+    font-size: 1rem;
+  }
+}
+
+// フッターのSNSボタン
+.sns-link {
+  width: 45px;
+  height: 45px;
+  font-size: 1.2rem;
+}
